@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:title = "Html"
+        android:id = "@+id/html"
+        android:icon="@drawable/ic_menu_gallery"
+
+        ></item>
+
+    <item
+        android:title = "Java"
+        android:id = "@+id/java"
+        android:icon="@drawable/ic_menu_gallery"
+
+        />
+    <item
+        android:title = "Php"
+        android:id = "@+id/php"
+        android:icon="@drawable/ic_menu_gallery"
+
+        />
+    <item
+        android:title = "Sql"
+        android:id = "@+id/sql"
+        android:icon="@drawable/ic_menu_gallery"
+
+        />
+</menu>

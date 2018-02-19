@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CodeQuizApp</string>
+    <string name="action_settings">Settings</string>
+    <integer name = "swing_anim_time">2333</integer>
+</resources>

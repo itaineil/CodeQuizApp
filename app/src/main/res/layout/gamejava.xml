@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF00FF00">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/listview"
+        android:padding="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardElevation="124dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/indigo">
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/linearLayout"
+            ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginTop="22dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_score" />
+
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="casual"
+                        android:gravity="center"
+                        android:text="Score : 1"
+                        android:textColor="#FF0000FF"
+                        android:textSize="25.0sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:src="@mipmap/ic_time" />
+
+                    <TextView
+                        android:id="@+id/timers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="casual"
+                        android:gravity="center"
+                        android:text="00:00:49"
+                        android:textColor="#FFFF0000"
+                        android:textSize="25.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.40" >
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_play" />
+
+                        <TextView
+                            android:id="@+id/txtQuestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="casual"
+                            android:gravity="center"
+                            android:text="15*2*1-1"
+                            android:textColor="#FF0000FF"
+                            android:textSize="35.0sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/relativeLayout"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listview"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:orientation = "vertical"
+        android:padding="50dp">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonJava1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FF0000FF"
+            fancy:fb_borderWidth="2dp"
+            fancy:fb_defaultColor="#FFFFFFFF"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_fontIconResource="&#xf04b;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Button 1"
+            fancy:fb_textColor="#FF0000FF" />
+
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_marginTop="22dp"
+            android:id="@+id/buttonJava2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FF0000FF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#FFFFFFFF"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_fontIconResource="&#xf04b;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Button 2"
+            fancy:fb_textColor="#FF0000FF" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_marginTop="22dp"
+            android:id="@+id/buttonJava3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FF0000FF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#FFFFFFFF"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_fontIconResource="&#xf04b;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Button 3"
+            fancy:fb_textColor="#FF0000FF" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

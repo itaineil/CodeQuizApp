@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">18dp</item>
+        <item name="cardElevation">55dp</item>
+        <item name="contentPaddingBottom">50dp</item>
+        <item name="contentPaddingTop">50dp</item>
+        <item name="contentPaddingLeft">50dp</item>
+        <item name="contentPaddingRight">50dp</item>
+        <item name="cardBackgroundColor">@color/indigo</item>
+    </style>
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/indigo</item>
+        <item name="colorButtonNormal">@color/pink</item>
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/grey</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/alert_dialog</item>
+    </style>
+
+</resources>
